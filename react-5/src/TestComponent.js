@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-var my
+// var myT;
 export default class TestComponent extends Component {
     constructor(props) {
         super(props);
@@ -14,17 +14,20 @@ export default class TestComponent extends Component {
     static getDerivedStateFromProps(props, state){
         console.log("Hello from TestComponent getDerivedStateFromProps")
         // console.log("Props: ", props)
-        // console.log("state: ", state)
-        return {model: "sembol"}
+        console.log("state: ", state)
+        return null
     }
     componentDidMount(){
         console.log("Hello from TestComponent componentDidMount")
         // console.log(this.state)
+        // myT=setTimeout(()=>{
+        //     this.state({count:this.state.count + 1})
+        // },3000)
         
     }
     shouldComponentUpdate(){
         console.log("ShouldComponentUpdate!....")
-        return true
+        return this.state.count < 3 ? true :false
     }
     componentDidUpdate(prevProps, prevState, snapshot) {
         // Typical usage (don't forget to compare props):
@@ -35,7 +38,7 @@ export default class TestComponent extends Component {
 
     componentWillUnmount(){
         console.log("component bye bye....");
-        clearTimeout(myT)
+        // clearTimeout(myT)
     }
       
     handleClick = () => {

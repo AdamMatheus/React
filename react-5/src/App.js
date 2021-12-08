@@ -6,10 +6,10 @@ const [isVisible,setIsvisible]=useState(true)
   return (
     <div className="App">
       <h1>CLARUSWAY</h1>
-      {isVisible} ? 
+      {isVisible ? 
       <TestComponent surname= "green"/>
       :null
-
+    }
       <button onClick={()=>setIsvisible(!isVisible)}>unmount</button>
     </div>
   );
