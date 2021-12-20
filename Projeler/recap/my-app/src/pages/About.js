@@ -1,22 +1,19 @@
-import React from 'react'
-import Welcome from '../components/Welcome';
-import aboutImg from "../img/manzara.jpg";
-import Buton from '../components/Buton';
-
+import React from "react";
+import Buton from "../components/Buton";
+import Welcome from "../components/Welcome";
+import aboutImg from "../img/aboutt.jpg";
 const About = () => {
-   
-const handleClick=()=>{
-    alert("About icine yonlendiriliyorsunuz");
-};
-    return (
-        <div>
-            <h1>About</h1>
-            <Welcome name="About" img={aboutImg}/>
-            <Buton  name="about" click={handleClick}/>
+  const handleClick = () => {
+    alert("About sayfasının detaylarına yönlendirliyorsunuz");
+  };
 
-        </div>
-    );
+  return (
+    <div>
+      <h1>About</h1>
+      <Welcome name="About" img={aboutImg} />
+      <Buton name="about" click={handleClick} color="white" bgColor="red" />
+    </div>
+  );
 };
-
 
 export default About;
