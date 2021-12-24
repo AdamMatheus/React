@@ -7,8 +7,8 @@ import RecipeCardComp from "./RecipeCardComp"
 
 
 const mealTypes=["Breakfast","Lunch","Dinner","Snack","Teatime"]
-const APP_ID = '4e9f05eb';
-const APP_KEY = '9b904d703fa0d46a88ce1ac63f29f498';
+const APP_ID = "14f44782";
+const APP_KEY ="d5ecfa632555299e71f2179642608681";
 
 const Home = () => {
     const [query,setQuery]=useState("")
