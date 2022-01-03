@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="app">
       <h1>Redux Class</h1>
-      <Counter/>
-      {/* <Todo/> */}
+      {/* <Counter/> */}
+      <Todo/>
     </div>
   );
 }

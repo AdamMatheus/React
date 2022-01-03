@@ -43,7 +43,12 @@ const todoReducer = (state = initialState, action) => {
         ),
       };
 
+    case CLEAR_TODO_LIST:
+      return initialState;
+
     default:
-      break;
+      return state
   }
 };
+
+export default todoReducer;

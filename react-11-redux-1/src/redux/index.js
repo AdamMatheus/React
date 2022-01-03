@@ -1,11 +1,11 @@
 import { createStore, combineReducers } from 'redux';
 import counterReducer from './reducer/counterReducer';
-// import todoReducer from './reducer/todoReducer';
+import todoReducer from './reducer/todoReducer';
 
 
 const reducers = combineReducers({
     counterReducer: counterReducer,
-    // todoReducer: todoReducer,
+    todoReducer: todoReducer,
 })
 
 export const combineStore = () => {
