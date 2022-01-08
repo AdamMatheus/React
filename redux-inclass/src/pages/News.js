@@ -23,7 +23,7 @@ const News = () => {
         <Box xs={{ d: 'flex' }} display='flex' alignItems='center' justifyContent='space-evenly' flexWrap='wrap'>
             {
                 newsList.map(item => (
-                    <Card sx={{ maxWidth: 345, m: 5 }}>
+                    <Card sx={{ maxWidth: 345, m: 5 }}> 
                         <CardMedia
                             component="img"
                             height="140"

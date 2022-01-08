@@ -3,7 +3,7 @@ import AppRouter from './router';
 import { Provider as StoreProvider } from 'react-redux';
 // import { createStore, applyMiddleware, compose } from 'redux';
 // import thunk from 'redux-thunk';
-// import axios from 'axios';
+//import axios from 'axios';
 import store from './redux/store';
 
 /**

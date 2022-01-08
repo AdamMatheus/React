@@ -1,12 +1,29 @@
-import { combineReducers } from 'redux';
-import appReducer from './appReducer';
-import userReducer from './userReducer';
-import newsReducer from './newsReducer';
+import {
+    SET_NEWS_LIST,
+    SET_SELECTED_NEWS,
+} from '../types/newsTypes'
 
-const rootReducer = combineReducers({
-    app: appReducer,
-    user: userReducer,
-    news: newsReducer,
-})
 
-export default rootReducer;
+const initialState = {
+    newsList: [],
+    selectedNews: {},
+}
+
+export const newsReducer = (state = initialState, { type, payload }) => {
+    switch (type) {
+        case SET_NEWS_LIST:
+            return {
+                ...state,
+                newsList: payload,
+            };
+        case SET_SELECTED_NEWS:
+            return {
+                ...state,
+                selectedNews: payload,
+            };
+        default:
+            return state;
+    }
+}
+
+export default newsReducer;

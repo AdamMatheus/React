@@ -6,11 +6,11 @@ export const getNewsThunk = () => async (dispatch, getState) => {
     try {
         dispatch(setLoadingTrueAction());
         const response = await axios.get('https://bing-news-search1.p.rapidapi.com/news', {
-            params: { safeSearch: 'Off', textFormat: 'Raw' },
+            params: {safeSearch: 'Off', textFormat: 'Raw'},
             headers: {
                 'x-bingapis-sdk': 'true',
                 'x-rapidapi-host': 'bing-news-search1.p.rapidapi.com',
-                'x-rapidapi-key': '349f5e0b59mshef6cfbb2b4a459bp1648abjsn6f46abe5aae1'
+                'x-rapidapi-key': 'db151142f9msh27a5b67f927d75fp1ac147jsn507b38ce1e98'
             }
         });
         dispatch(setNewsListAction(response.data.value));
