@@ -21,7 +21,7 @@ const Main = () => {
 
     useEffect(() => {
         dispatch(getUserList());
-    }, []);
+    }, [dispatch]);
 
 
     return (

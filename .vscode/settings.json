@@ -1,0 +1,17 @@
+{
+  "files.exclude": {
+    "redux-inclass\\*.gitignore": true,
+    "redux-inclass\\*.gitignore.*": true,
+    "redux-inclass\\*node_modules": true,
+    "redux-inclass\\*node_modules.*": true,
+    "redux-inclass\\*package-lock": true,
+    "redux-inclass\\*package-lock.*": true,
+    "redux-inclass\\*package": true,
+    "redux-inclass\\*package.*": true,
+    "redux-inclass\\*public": true,
+    "redux-inclass\\*public.*": true,
+    "redux-inclass\\*README": true,
+    "redux-inclass\\*README.*": true,
+    "redux-inclass\\*src.*": true
+  }
+}

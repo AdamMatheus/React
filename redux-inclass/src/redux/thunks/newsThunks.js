@@ -6,7 +6,7 @@ export const getNewsThunk = () => async (dispatch, getState) => {
     try {
         dispatch(setLoadingTrueAction());
         const response = await axios.get('https://bing-news-search1.p.rapidapi.com/news', {
-            params: {safeSearch: 'Off', textFormat: 'Raw'},
+            params: { safeSearch: 'Off', textFormat: 'Raw' },
             headers: {
                 'x-bingapis-sdk': 'true',
                 'x-rapidapi-host': 'bing-news-search1.p.rapidapi.com',
